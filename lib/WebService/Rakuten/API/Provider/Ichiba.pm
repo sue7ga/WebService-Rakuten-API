@@ -13,8 +13,9 @@ use constant BASERANKURL => 'https://app.rakuten.co.jp/services/api/IchibaItem/R
 sub call{
  my($class,$context,$arg) = @_;
  my $url = URI->new(BASEICHIBAURL);
- $url->query_form(applicationId => $context->appid,format=>'json',keyword=>$arg->{keyword});
+ $url->query_form(applicationId => $context->appid,format=>$arg->{format},keyword =>$arg->{keyword});
  my $res = $context->furl->get($url);
+ my $response = JSON::decode_json($res->decoded_content);
 }
 
 1;

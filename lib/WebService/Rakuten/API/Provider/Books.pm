@@ -22,7 +22,7 @@ use constant BASEGENREURL => 'https://app.rakuten.co.jp/services/api/BooksGenre/
 
 sub call{
  my($class,$context,$arg) = @_;
- my $url = URI->new(BASEBOOKSURL);
+ my $url = URI->new(BASEBOOKSSEARCHURL);
  $url->query_form(applicationId => $context->appid,format=> $arg->{format},keyword=>$arg->{keyword});
  my $res = $context->furl->get($url);
 }

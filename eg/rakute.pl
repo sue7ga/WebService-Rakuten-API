@@ -10,4 +10,8 @@ my $rakuten = WebService::Rakuten::API->new(
   appid => '1094713744828153190',
 );
 
-print Dumper $rakuten->recipe({categoryType=>'large',format => 'json'})
+my $items = $rakuten->ichiba({keyword=>'遊戯王',format => 'json'});;
+
+print Dumper $items->{Items}->[0]->{Item}->{itemName};
+
+
