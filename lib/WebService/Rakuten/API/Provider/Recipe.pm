@@ -1,9 +1,10 @@
 package WebService::Rakuten::API::Provider::Recipe;
-
 use strict;
 use warnings;
 
 use constant BASERECIPEURL => 'https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20121121?';
+
+use constant CategoryRanking => 'https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20121121?';
 
 sub call{
  my($class,$context,$arg) = @_;

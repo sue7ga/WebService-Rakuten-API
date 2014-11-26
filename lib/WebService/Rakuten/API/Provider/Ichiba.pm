@@ -4,6 +4,12 @@ use warnings;
 
 use constant BASEICHIBAURL => 'https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?';
 
+use constant BASEICHIBAGENRE => 'https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20140222?';
+
+use constant BASETAGURL => 'https://app.rakuten.co.jp/services/api/IchibaTag/Search/20140222?';
+
+use constant BASERANKURL => 'https://app.rakuten.co.jp/services/api/IchibaItem/Ranking/20120927?';
+
 sub call{
  my($class,$context,$arg) = @_;
  my $url = URI->new(BASEICHIBAURL);

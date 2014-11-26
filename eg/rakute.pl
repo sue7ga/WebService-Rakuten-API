@@ -10,6 +10,4 @@ my $rakuten = WebService::Rakuten::API->new(
   appid => '1094713744828153190',
 );
 
-
-
 print Dumper $rakuten->recipe({categoryType=>'large',format => 'json'})
