@@ -8,6 +8,8 @@ use JSON;
 use URI;
 our $VERSION = "0.01";
 use WebService::Rakuten::API::Travel;
+use WebService::Rakuten::API::Provider::Ichiba;
+use WebService::Rakuten::API::Provider::Recipe;
 use WebService::Rakuten::API::Provider;
 use Mouse;
 use Furl;
@@ -54,7 +56,7 @@ sub books{
  $self->provider->dispatch('books',@_);
 }
 
-sub bookmark{
+sub recipe{
  my $self =shift;
  $self->provider->dispatch('recipe',@_);
 }

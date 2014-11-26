@@ -12,5 +12,4 @@ my $rakuten = WebService::Rakuten::API->new(
 
 
 
-
-print Dumper $rakuten->travel({apiname => 'hotel',largeClassCode=> 'japan',middleClassCode => 'akita',smallClassCode => 'tazawa'})
+print Dumper $rakuten->recipe({categoryType=>'large',format => 'json'})

@@ -1,6 +1,9 @@
 package WebService::Rakuten::API::Provider;
 use Mouse;
 use WebService::Rakuten::API::Provider::Travel;
+use WebService::Rakuten::API::Provider::Ichiba;
+use WebService::Rakuten::API::Provider::Books;
+
 
 has furl => (
   is => 'ro',
