@@ -53,5 +53,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/sue7ga/WebService-Rakuten-API/issues"
+      },
+      "homepage" : "https://github.com/sue7ga/WebService-Rakuten-API",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/sue7ga/WebService-Rakuten-API.git",
+         "web" : "https://github.com/sue7ga/WebService-Rakuten-API"
+      }
+   },
    "version" : "0.01"
 }
