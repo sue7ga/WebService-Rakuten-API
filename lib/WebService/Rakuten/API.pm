@@ -6,7 +6,7 @@ use LWP::UserAgent;
 use Mouse;
 use JSON;
 use URI;
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 use WebService::Rakuten::API::Travel;
 use WebService::Rakuten::API::Provider::Ichiba;
 use WebService::Rakuten::API::Provider::Recipe;
@@ -68,15 +68,23 @@ __END__
 
 =head1 NAME
 
-WebService::Rakuten::API - It's new $module
+WebService::Rakuten::API - It's a Rakuten WebService API.
 
 =head1 SYNOPSIS
 
-    use WebService::Rakuten::API;
+  use WebService::Rakuten::API;
+
+  my $rakuten = WebService::Rakuten::API->new(
+       appid => __YOURAPI__
+  );
+   
+  my $items = $rakuten->ichiba({keyword => '遊戯王',format => 'json'});
+
+  print $items->{Items}->[0]->{Item}->{itemName};  
 
 =head1 DESCRIPTION
 
-WebService::Rakuten::API is ...
+WebService::Rakuten::API is API that is descripting RakutenWebServiceAPI.
 
 =head1 LICENSE
 

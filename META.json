@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "It's a Rakuten WebService API.",
    "author" : [
       "sue7ga <sue77ga@gmail.com>"
    ],
@@ -64,5 +64,5 @@
          "web" : "https://github.com/sue7ga/WebService-Rakuten-API"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
