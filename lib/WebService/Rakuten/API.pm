@@ -6,7 +6,7 @@ use LWP::UserAgent;
 use Mouse;
 use JSON;
 use URI;
-our $VERSION = "0.04";
+our $VERSION = "0.05";
 use WebService::Rakuten::API::Provider::Travel;
 use WebService::Rakuten::API::Provider::Ichiba;
 use WebService::Rakuten::API::Provider::Recipe;
