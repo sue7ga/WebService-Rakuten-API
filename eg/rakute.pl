@@ -12,6 +12,6 @@ my $rakuten = WebService::Rakuten::API->new(
 
 my $items = $rakuten->books({keyword=>'遊戯王',format => 'json'});;
 
-print Dumper $items->{Items}->[0]->{Item}->{itemName};
+print Dumper $items;
 
 
